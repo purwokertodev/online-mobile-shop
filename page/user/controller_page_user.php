@@ -1,0 +1,58 @@
+<?php
+
+$user = filter_input(INPUT_GET, 'user');
+switch ($user) {
+    case 'home': include 'home.php';
+        break;
+    case 'panduan':include 'panduan.php';
+        break;
+    case 'denah':include 'denah.php';
+        break;
+    case 'tentang':include 'tentang.php';
+        break;
+    case 'keranjang':include 'keranjang.php';
+        break;
+    case 'update_keranjang':include 'update_keranjang.php';
+        break;
+    case 'hapus_keranjang':include 'hapus_keranjang.php';
+        break;
+    case 'belanja_finish':include 'belanja_finish.php';
+        break;
+    case 'daftar_pabrikan':include 'daftar_pabrikan.php';
+        break;
+    case 'daftar_produk':include 'daftar_produk.php';
+        break;
+    case 'cari_produk_by_nama':include 'produk_by_nama.php';
+        break;
+    case 'registrasi_pembeli':include 'registrasi_pembeli.php';
+        break;
+    case 'registrasi_pembeli_finish':include 'registrasi_pembeli_finish.php';
+        break;
+    case 'menu_member':include 'menu_member.php';
+        break;
+    case 'registrasi_member':include 'registrasi_member.php';
+        break;
+    case 'registrasi_member_finish':include 'registrasi_member_finish.php';
+        break;
+    case 'login_member':include 'login_member.php';
+        break;
+    case 'login_member_finish':include 'login_member_finish.php';
+        break;
+    case 'produk_by_vendor':include 'produk_by_vendor.php';
+        break;
+    case 'produk_detail':include 'produk_detail.php';
+        break;
+    case 'konfirmasi_pembayaran':include 'konfirmasi_pembayaran.php';
+        break;
+    case 'konfirmasi_pembayaran_finish':include 'konfirmasi_pembayaran_finish.php';
+        break;
+    case 'ubah_alamat_pengiriman':include 'ubah_alamat_pengiriman.php';
+        break;
+    case 'ubah_alamat_pengiriman_finish':include 'ubah_alamat_pengiriman_finish.php';
+        break;
+    case 'detail_transaksi':include 'detail_transaksi.php';
+        break;
+    case 'tutup':include 'tutup.php';
+        break;
+    default :include 'home.php';
+}
